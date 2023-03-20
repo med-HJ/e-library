@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <link type="text/css" rel="stylesheet"
+        href="new.css"
+        media="screen" />
+
+</head>
+
+<body >
+    <script type="text/javascript" src="https://www.audiobooks.com/javascript/jquery/jquery-3.5.1.min.js"
+        charset="UTF-8"></script>
+    
+
+    <div id="wrapper" class="clearfix">
+        <div id="top-bar">
+            <div class="container clearfix">
+                <div id="top-menu">
+                    <div id="logo" style="min-height:80px">
+                        <!--Beginning of content block. uniqueSnippetId: 17382, snippetId: 1090, name: v3 Nonmember Header-->
+                        <!--Regular Logo -->
+
+                        <a href="https://www.audiobooks.com/">
+                            <img src="/images/abc-logo.png" alt="Audiobooks.com" title="Audiobooks.com" />
+                        </a>
+
+                        <!--Audiobook Month 2017 Doodle-->
+
+                        <!--<a href="https://www.audiobooks.com/audiobookmonth">
+	<img src="https://images.audiobooks.com/audiobookmonth/AM-Logo.png" alt="June is Audiobook Month!" title="June is Audiobook Month!"/>
+</a>-->
+
+                        <!-- Christmas 2016 Logo
+<a href="https://www.audiobooks.com">
+	<img src="https://images.audiobooks.com/Holidays2016/christmas-doodle-2016.png" alt="Audiobooks.com" title="Audiobooks.com" />
+</a>
+ -->
+
+                        <!-- Christmas 2017 Logo  
+<a href="https://www.audiobooks.com">
+	<img src="https://images.audiobooks.com/Holidays2017/christmas-doodle-2017-large.png" alt="Audiobooks.com" title="Audiobooks.com" />
+</a> -->
+
+
+                        <!-- Halloween Logo-->
+                        <!-- <a href="https://www.audiobooks.com">
+	<img src="https://images.audiobooks.com/doodles/abc-halloween-logo-2019.png" alt="Audiobooks.com" title="Audiobooks.com" />
+</a> -->
+
+
+                        <!--Black Friday Logo-->
+                        <!-- <a href="https://www.audiobooks.com">
+	<img src="https://images.audiobooks.com/Logos/ABC-BlackFridayLogo.png" style="height:53px; width:270px;" alt="Audiobooks.com" title="Audiobooks.com" />
+</a> -->
+
+                        <!--Olympics Logo-->
+                        <!--<a href="https://www.audiobooks.com">
+	<img src="https://images.audiobooks.com/Logos/Olympics-Logo-2016.png" alt="Audiobooks.com" title="Audiobooks.com" />
+</a>-->
+
+
+                        <!--Audiobook Month 2016 Doodle-->
+
+                        <!--<a href="https://www.audiobooks.com/audiobookmonth">
+	<img src="https://images.audiobooks.com/audiobookmonth/images/AudiobookMonth2016-Doodle.png" alt="June is Audiobook Month!"/>
+</a>-->
+
+                        <!--New Years Doodle-->
+
+                        <!--<a href="https://www.audiobooks.com/gifts">
+	<img src="https://images.audiobooks.com/NewYears2016-Doodle6.png" alt="Save Big On Gifts for Black Friday!"/>
+</a>-->
+
+                        <!--Christmas Doodle-->
+
+                        <!--<a href="https://www.audiobooks.com">
+	<img src="https://images.audiobooks.com/Holidays2015/HolidayDoodle2015-10.png" alt="Happy Holidays from Audiobooks.com!"/>
+</a>-->
+
+
+                        <!-- Memorial Day Doodle -->
+
+                        <!--<a href="https://www.audiobooks.com/browse/booklists/memorial-day">
+	<img src="
+https://images.audiobooks.com/Memorial-Day-Doodle.png" alt="Save Big On Gifts for Black Friday!"/>
+</a>-->
+
+
+                        <!-- 4th of July Doodle -->
+
+                        <!--<a href="https://www.audiobooks.com/browse/booklists/great-american-journeys">
+	<img src="
+https://images.audiobooks.com/Memorial-Day-Doodle.png" alt="Happy 4th of July!"/>
+</a>-->
+
+
+
+
+
+
+                        <!--End of content block. uniqueSnippetId: 17382, snippetId: 1090, name: v3 Nonmember Header-->
+                    </div>
+                </div>
+                <div id="top-links">
+                    <!-- Button to trigger modal -->
+                    <div class="clearfix">
+                        <a href="/signup" class="signupBtn simple-button fleft">Sign up</a>
+                        <a href="javascript:void(0);" class="loginBtn simple-button inverse">Login</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Login Modal Box -->
+        <div id="myLogin" class="modal hide" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-body">
+                <h4>Login</h4>
+                <form id="formLogin" name="loginForm" class="form-inline" method="post"
+                    action="https://www.audiobooks.com/login/authenticate">
+                    <input type="hidden" name="ajax" value="true" />
+                    <div class="clearfix">
+                        <div class="col_half">
+                            <input id="loginEmail" name="loginEmail" aria-label="Email address" type="email"
+                                placeholder="Email" value="" />
+                        </div>
+                        <div class="col_half col_last">
+                            <input id="loginPassword" aria-label="password" name="loginPassword" type="password"
+                                placeholder="Password" value="" />
+                        </div>
+                    </div>
+                    <div class="clearfix login-options">
+                        <div class="col_half">
+                            <label class="checkbox">
+                                <input id="loginPersist" name="loginPersist" type="checkbox" value="true" /> Remember Me
+                            </label>
+                        </div>
+                        <div class="col_half col_last tright">
+                            <p><a href="#" class="forgotPasswordLink">Forgot your password?</a></p>
+                        </div>
+                    </div>
+                    <div class="alert alert-failure hidden"></div>
+                    <p><strong class="alt-msg"><u>OR</u> login with:</strong></p>
+                    <div id="alternativeLogins">
+                        <div class="flexer-logins">
+                            <div class="altlogins__icon-container altlogins__icon-container--apple">
+                                <img class="altlogins__apple" src="//images.audiobooks.com/icons/apple-icon.png" />
+                            </div>
+
+                            <a href="#" class="altlogins__text-apple altlogin-action" data-type="apple">
+                                <div
+                                    class="altlogins__text-container altlogins__text-container--modal altlogins__text-container--apple">
+                                    <span class="label label--apple">Apple</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="flexer-logins">
+                            <div class="altlogins__icon-container altlogins__icon-container--google">
+                                <img class="altlogins__google" src="//images.audiobooks.com/icons/google-logo-2.png" />
+                            </div>
+
+                            <a href="#" class="altlogins__text-google altlogin-action" data-type="google">
+                                <div
+                                    class="altlogins__text-container altlogins__text-container--modal altlogins__text-container--google">
+                                    <span class="label label--google">Google</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="flexer-logins">
+                            <div class="altlogins__icon-container altlogins__icon-container--facebook">
+                                <img class="altlogins__facebook"
+                                    src="//images.audiobooks.com/icons/facebook-logo-2.png" />
+                            </div>
+
+                            <a href="#" class="altlogins__text-facebook altlogin-action" data-type="facebook">
+                                <div
+                                    class="altlogins__text-container altlogins__text-container--modal altlogins__text-container--facebook">
+                                    <span class="label label--facebook">Facebook</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="flexer-logins">
+                            <div class="altlogins__icon-container altlogins__icon-container--amazon">
+                                <img class="altlogins__amazon" src="//images.audiobooks.com/icons/amazon-logo-2.png" />
+                            </div>
+
+                            <a href="#" class="altlogins__text-amazon altlogin-action" data-type="amazon">
+                                <div
+                                    class="altlogins__text-container altlogins__text-container--modal altlogins__text-container--amazon">
+                                    <span class="label label--amazon">Amazon</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <p>Don't have an account? <a href="/signup">Sign Up For Free!</a></p>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn" data-dismiss="modal">Close</button>
+                <button id="loginButton" type="submit" class="btn btn-orange">Login</button>
+                <span id="loginButtonLoading" class="btn btn-orange hide"><i
+                        class="icon-spinner icon-spin icon-large"></i></span>
+            </div>
+        </div>
+
+        <!-- Forgot Password Modal Box -->
+        <div id="myForgotPassword" class="modal hide" tabindex="-1" role="dialog">
+            <div class="modal-body">
+                <h4>Forgot Password</h4>
+                <form id="formForgot" name="forgotForm" class="ajax form-inline" method="post"
+                    action="https://www.audiobooks.com//account/reset_password">
+                    <input type="hidden" name="ajax" value="true" />
+
+                    <div class="clearfix">
+                        <div class="col_two_third">
+                            <input type="email" id="email" aria-label="email address" name="email"
+                                placeholder="Account Email" />
+                        </div>
+                    </div>
+                    <div>
+                        <p>Please type in your email address in order to receive an email with instructions on how to
+                            reset your password.</p>
+                    </div>
+                </form>
+                <div class="alert alert-success hidden"></div>
+                <div class="alert alert-failure hidden"></div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn" data-dismiss="modal">Close</button>
+                <button id="forgotButton" type="submit" class="btn btn-success btn-submit">Reset Password</button>
+                <span id="forgotButtonLoading" class="btn btn-success hide"><i
+                        class="icon-spinner icon-spin icon-large"></i></span>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <script type="text/javascript"
+        src="https://www.audiobooks.com/application/cache/00000000002702b4396ab6de5396a2fd8cf8fb52bf.js"
+        charset="UTF-8"></script>
+
+
+  
+ 
+   
+</body>
+
+</html>

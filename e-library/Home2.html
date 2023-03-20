@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Webpage Design</title>
+    <link type="text/css" rel="stylesheet" href="vb.css" media="screen" />
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">PraRoz</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="maths.html">MATHS</a></li>
+                    <li><a href="physics.html">PHYSICS</a></li>
+                    <li><a href="favorites.html">FAVORITES</a></li>
+                </ul>
+            </div>
+            
+            <div class="search">
+                <input class="srch" id="search_book" type="search" name="" placeholder="Type To text">
+                <a href="#"> <button id="chercher" class="btn">Search</button></a>
+            </div>
+            
+            <script>
+                function chercherr() {
+                    let math = ["dunod math", "j'intègre math ", "tout en un math", "100% concours", "aassila"];
+                    let physics = ["nathan", "j'intègre", "dunod physique", "tout en un physique"];
+                    let input = document.getElementById('search_book').value;
+                    input = input.toLowerCase();
+
+                    var x = 0;
+                    if (input != "") {
+                        for (var i = 0; i < math.length; i++) {
+                            if (input.includes(math[i])) {
+                                x = 1;
+                                window.location.href = "maths.html";
+                                break;
+                            }
+                        }
+
+                        if (x == 0) {
+                            for (var i = 0; i < physics.length; i++) {
+                                if (input.includes(physics[i])) {
+                                    x = 1;
+                                    window.location.href = "physics.html";
+                                    break;
+                                }
+                            }
+                            if (x == 0) {
+                                alert("No item exist");
+
+                            }
+
+                        }
+                    }
+
+                }
+                document.getElementById("chercher").addEventListener("click", chercherr);
+
+
+
+
+
+
+            </script>
+
+        </div>
+        <div class="content">
+            
+        <h1> <br>Bibliothèque électronique de CPGE <br> pour toute les filieres scientifique <br> <span>MP PSI TSI</span> </h1>
+        <p class="par">
+        </p>
+
+            <button class="cn"><a href="#">JOIN US</a></button>
+
+            <div class="form">
+                <h2>Login Here</h2>
+                <input type="email" name="email" placeholder="Enter Email Here">
+                <input type="password" name="" placeholder="Enter Password Here">
+                <button class="btnn"><a href="#">Login</a></button>
+    
+                <p class="link">Don't have an account<br>
+                    <a href="#">Sign up </a> here</a>
+                </p>
+                <p class="liw">Log in with</p>
+
+               
+    
+                <div class="icons">
+                    <a href="#">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                    <a href="#">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                    <a href="#">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                    <a href="#">
+                        <ion-icon name="logo-google"></ion-icon>
+                    </a>
+                    <a href="#">
+                        <ion-icon name="logo-skype"></ion-icon>
+                    </a>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    
+</body>
+
+</html>
